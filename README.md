@@ -1,2 +1,3 @@
-# desafio-repositorio-DIO
-Desafio de projeto para o Bootcamp Santander Full Stack Developer da DIO.
+# Projeto de Git/GitHub DIO
+Nesse repositório estarão listados alguns dos meus projetos feitos ao longo do bootcamp
+
