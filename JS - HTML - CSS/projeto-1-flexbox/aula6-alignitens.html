@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - Align Itenst</title>
+
+  <style>
+    .container{
+      max-width: 350px;
+      border: 1px solid black;
+      display: flex;
+    }
+
+    .item{
+      background-color: blueviolet;
+      margin: 5px;
+      color: white;
+      text-align: center;
+      flex: 1;
+
+    }
+
+    .center{
+      align-items: center;
+    }
+
+    .stretch{
+      align-items: stretch;
+    }
+    .flex-start{
+      align-items: flex-start;
+    }
+    .flex-end{
+      align-items: flex-end;
+    }
+    .baseline{
+      align-items: baseline;
+    }
+    .column{
+      flex-direction: column;
+    }
+    .central{
+      height: 500px;
+      justify-content: center;
+    }
+    .central .item{
+      flex: 0;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Row</h1>
+  <p>Center</p>
+  <section class="container center">
+    <div class="item">Item 1 teste de texto</div>
+    <div class="item">Item 2 teste de texto</div>
+    <div class="item">Item 3 teste de texto</div>
+  </section>
+
+  <p>Stretch</p>
+  <section class="container stretch">
+    <div class="item">Item 1 teste de texto</div>
+    <div class="item">Item 2 teste de texto</div>
+    <div class="item">Item 3 teste de texto 12345 art 25klasf</div>
+  </section>
+
+  <p>flex-start</p>
+  <section class="container flex-start">
+    <div class="item">Item 1 teste de texto</div>
+    <div class="item">Item 2 teste de texto testando texto ainda mais extra</div>
+    <div class="item">Item 3 teste de texto kadoskdsadakdkdaodassd oaksdokdaokdao</div>
+  </section>
+
+  <p>flex-end</p>
+  <section class="container flex-end">
+    <div class="item">Item 1 teste de texto testando texto ainda mais extra </div>
+    <div class="item">Item 2 teste de texto adicionando mais coisas 28 35 48 77 </div>
+    <div class="item">Item 3 teste de texto mais coisas</div>
+  </section>
+
+  <p>Baseline</p>
+  <section class="container baseline">
+    <div class="item"><br> Item 1 teste de texto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae eveniet dolores deserunt eaque iusto, qui excepturi. Accusamus maiores iste, quas iure minus sequi optio rerum ea quam, ipsa magni.</div>
+    <div class="item">Item 2 teste de texto ai vem isso e depois aquilo e por fim tudo isso</div>
+    <div class="item">Item 3 teste de texto já estou sem ideia do que escrever, apenas testando toda a funcionalidade disso</div>
+  </section>
+
+  <h1>Column</h1>
+  <p>Center</p>
+  <section class="container center column">
+    <div class="item">Item 1 teste de texto</div>
+    <div class="item">Item 2 teste de texto</div>
+    <div class="item">Item 3 teste de texto</div>
+  </section>
+  <p>Stretch</p>
+  <section class="container stretch column">
+    <div class="item">Item 1 teste de texto</div>
+    <div class="item">Item 2 teste de texto</div>
+    <div class="item">Item 3 teste de texto 12345 art 25klasf</div>
+  </section>
+
+  <p>flex-start</p>
+  <section class="container flex-start column">
+    <div class="item">Item 1 teste de texto</div>
+    <div class="item">Item 2 teste de texto testando texto ainda mais extra</div>
+    <div class="item">Item 3 teste de texto kadoskdsadakdkdaodassd oaksdokdaokdao</div>
+  </section>
+
+  <p>flex-end</p>
+  <section class="container flex-end column">
+    <div class="item">Item 1 teste de texto testando texto ainda mais extra </div>
+    <div class="item">Item 2 teste de texto adicionando mais coisas 28 35 48 77 </div>
+    <div class="item">Item 3 teste de texto mais coisas</div>
+  </section>
+
+  <p>Baseline</p>
+  <section class="container baseline column">
+    <div class="item"><br> Item 1 teste de texto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae eveniet dolores deserunt eaque iusto, qui excepturi. Accusamus maiores iste, quas iure minus sequi optio rerum ea quam, ipsa magni.</div>
+    <div class="item">Item 2 teste de texto ai vem isso e depois aquilo e por fim tudo isso</div>
+    <div class="item">Item 3 teste de texto já estou sem ideia do que escrever, apenas testando toda a funcionalidade disso</div>
+  </section>
+
+  <p>Alinhamento central</p>
+  <section class="container central center">
+    <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit.?</div>
+
+  </section>
+
+
+  
+</body>
+</html>
