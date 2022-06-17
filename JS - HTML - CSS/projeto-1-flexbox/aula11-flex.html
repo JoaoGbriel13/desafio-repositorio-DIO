@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - Flex</title>
+  <style>
+    .flex-container{
+    display: flex;
+    border: 1px solid black;
+    max-width: 400px; 
+    }
+
+    .item{
+    background-color: brown;
+    color: white;
+    text-align: center;
+    font-size: 24px; 
+    margin: 5px;
+    }
+
+    .f-1{
+      flex: 1;
+    }
+    .f-2{
+      flex: 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Diferentes tipos de Flex</h1>
+  <p>flex:1</p>
+  <div class="flex-container">
+   <div class="item f-1">A</div>
+   <div class="item f-1">BB</div>
+   <div class="item f-1">CCC</div>
+   <div class="item f-1">DD</div>
+   <div class="item f-1">EEE</div>
+  </div>
+
+  <p>flex:mix</p>
+  <div class="flex-container">
+   <div class="item f-1">A</div>
+   <div class="item f-2">BB</div>
+   <div class="item f-2">CCC</div>
+   <div class="item f-1">DD</div>
+   <div class="item f-2">EEE</div>
+  </div>
+</body>
+</html>

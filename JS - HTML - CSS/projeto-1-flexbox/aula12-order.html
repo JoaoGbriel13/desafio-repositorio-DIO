@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - Order</title>
+
+  <style>
+    .flex-container{
+      display: flex;
+      border: 1px solid black;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+
+    .item{
+      flex: 1;
+      background: brown;
+      color: white;
+      text-align: center;
+      margin: 5px;
+      font-size: 24px;
+      order: 0;
+    }
+    
+    .order-1{
+      order: 1;
+    }
+
+    .order-2{
+      order: 2;
+
+    }
+
+    .order-3{
+      order:3;
+
+    }
+    .direction{
+      flex-direction: column;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Row</h1>
+  <p>order:0</p>
+  <div class="flex-container">
+    <div class="item">1</div>
+    <div class="item">22</div>
+    <div class="item">33</div>
+    <div class="item">44</div>
+  </div>
+
+  <p>order:1</p>
+  <div class="flex-container">
+    <div class="item order-2">1</div>
+    <div class="item order-3">22</div>
+    <div class="item order-1">33</div>
+    <div class="item order-2">44</div>
+  </div>
+
+  <h1>Column</h1>
+  <p>order:0</p>
+  <div class="flex-container direction">
+    <div class="item">1</div>
+    <div class="item">22</div>
+    <div class="item">33</div>
+    <div class="item">44</div>
+  </div>
+
+  <p>order:1</p>
+  <div class="flex-container direction">
+    <div class="item order-2">1</div>
+    <div class="item order-3">22</div>
+    <div class="item order-1">33</div>
+    <div class="item order-2">44</div>
+  </div>
+</body>
+</html>
