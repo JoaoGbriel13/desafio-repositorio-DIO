@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Open+Sans:wght@500&family=Roboto:ital,wght@1,100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body{
+  background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  
+}
+
+main{
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  
+}
+
+#img{
+  max-width: 600px;
+  border-radius: 30px;
+}
+
+button{
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  background: orangered;
+  color: black;
+}
+
+
+
+
