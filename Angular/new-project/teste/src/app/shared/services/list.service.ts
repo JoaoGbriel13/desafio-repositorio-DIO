@@ -11,8 +11,8 @@ export class ListService {
   
   constructor(private httpclient : HttpClient) { }
   
-  getList():Observable <any[]> {
-    return this.httpclient.get<any[]>(this.apiURL)
+  getList():Observable <any> {
+    return this.httpclient.get<any>(this.apiURL)
     
   }
 
