@@ -1,0 +1,46 @@
+<div class="form-group">
+    <label for="number">Number:</label>
+    <input type="text" class="form-control" id="number" [(ngModel)]="number">
+    <p>{{ number }}</p>
+    <button class="btn btn-success" (click)="mudaValor()">Click</button>
+</div>
+
+<div class="">
+    sem formatação:
+    <p>{{number | number}}</p>
+    com formatação : 
+    <p>{{ number | number:'2.0-1'}}</p>
+
+    <p>{{ text | slice:0:4}}</p>
+
+    <p>Resultado em moeda: {{ number | currency:'BRL'}}</p>
+
+    <p>Resultado em porcentagem: {{number | percent}} </p>
+
+    <p>{{ text | titlecase}}</p>
+
+    <p>Data de hoje:</p>
+    <p>{{ date | date:'full'}}</p>
+    <p>{{ date | date:'shortTime'}}</p>
+    <p>{{ date | date:'dd/MM/YYYY'}}</p>
+
+    <p>{{ pessoa | json }}</p>
+
+    <div class="container">
+        <div class="col">
+            <div class="row-6">
+                <div class="form-group">
+                    <label for="Print pipe text"></label>
+                    <input type="text" name="text" id="text" #nome >
+                    <button class="btn btn-primary" (click)="add(nome.value)">Add</button>
+                </div>
+            </div>
+            <div class="row-6">
+                <h3>Lista formatada</h3>
+                <p>Tamanho da Lista {{ nomes.length }}</p>
+                <p>{{ nomes | printList }}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
